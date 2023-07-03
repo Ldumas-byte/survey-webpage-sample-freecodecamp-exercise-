@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">Welcome, food lovers, to the meal survey form.</h1>
+
+    <p id="description">
+
+        Hello, Grace Hill middle schooler. Take this fun survey to tell us about your favorite food. This assignment will count towards the school summer fair and what will be served at the party.
+
+    </p>
+    <form action="https://HappyFoods.TheFoodFeeders.org" method="post" id="survey-form">
+        <fieldset>
+
+            <label for="name" id="name-label"> Enter Your Name: <input type="text" id="name" name="name" placeholder="Enter Name here..." required /> </label>
+            <label for="email" id="email-label"> Enter Your Email: <input type="email" id="email" name="email" placeholder="Enter Email here..."required /> </label>
+            <label for="age" id="age-label"> Enter your age: <input id="number" type="number" name="age" min="7" max="18" placeholder="Enter Age here..." required /></label>
+            <label for="birthday" id="number-label">Enter Your Birthday: <input type="date" id="birthday" placeholder="Enter Birthday here..." required></label>
+            <label for="referrer"> How did you hear about us? 
+
+                <select name="referrer" id="dropdown" required>
+                
+                    <option value="food-item">(select one)</option>
+                    <option value="1">Website</option>
+                    <option value="2">School Fair</option>
+                    <option value="3">Email</option>
+                    <option value="4">Other</option>
+    
+                </select>
+
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend> Which do you prefer, Fruits or Vegetables?</legend>
+            <div>
+                <input type="radio" id="fruit" name="fruit-vegetable" value="fruit" required>
+                <label for="fruit">Fruits</label>
+            </div>
+            <div>
+                <input type="radio" id="vegetables" name="fruit-vegetable" value="vegetables" required>
+                <label for="vegetables">Vegetables</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Whats your favorite Food types?</legend>
+            <label for="pasta">Pasta <input type="checkbox" name="pasta" id="food-type" value="food-item" required/></label>
+            <label for="sandwiches">Sandwiches <input type="checkbox" name="sandwiches" id="food-type" value="food-item" required/></label>
+            <label for="cake">Cake <input type="checkbox" name="cake" id="food-type" value="food-item" required/></label>
+            <label for="chocolate">Chocolate <input type="checkbox" name="chocolate" id="food-type" value="food-item" required/></label>
+            <label for="pizza">Pizza <input type="checkbox" name="pizza" id="food-type" value="food-item" required/></label>
+            <label for="cookies">Cookies <input type="checkbox" name="cookies" id="food-type" value="food-item" required/></label>
+            <label for="chicken">Chicken <input type="checkbox" name="chicken" id="food-type" value="food-item" required/></label>
+            <label for="soup">Soup <input type="checkbox" name="soup" id="food-type" value="food-item" required/></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your personal favorites? </legend>
+            <label for="breakfast"> Your favorite breakfast: <input type="text" name="breakfast" id="favorites" required /></label>
+            <label for="lunch"> Your favorite lunch: <input type="text" name="lunch" id="favorites" required /></label>
+            <label for="dinner"> Your favorite dinner: <input type="text" name="dinner" id="favorites" required /></label>
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Favorite drinks?</legend>
+            <div>
+                <input type="radio" id="soda" name="drinks" value="soda" required>
+                <label for="soda">Soda</label>
+            </div>
+            <div>
+                <input type="radio" id="juice" name="drinks" value="juice" required>
+                <label for="juice">Juice</label>
+            </div>
+            <div>
+                <input type="radio" id="smoothie" name="drinks" value="smoothie" required>
+                <label for="smoothie">Smoothie</label>
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>If theres any more you would to tell us, please write in below:</legend>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Please tell us more here..."></textarea>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit" />
+    </form>
+</body>
+<footer>
+    Grace Hill inc.
+</footer>
+
+</html>
